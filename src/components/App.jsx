@@ -1,4 +1,4 @@
-import Header from "./header/Header";
+import Hero from "./hero/Hero";
 
 export const App = () => {
   return (
@@ -10,7 +10,7 @@ export const App = () => {
       //   alignItems: 'center',
       // }}
     >
-    <Header />
+    <Hero />
     </div>
   );
 };

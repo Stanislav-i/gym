@@ -4,7 +4,7 @@ export const Wrapper = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 60px;
+    padding: 0 37px;
 `
 export const Name = styled.div`
     font-family: var( --title-family);
