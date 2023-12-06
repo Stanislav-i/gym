@@ -1,3 +1,4 @@
+import Advantages from "./advantages/Advantages";
 import Hero from "./hero/Hero";
 
 export const App = () => {
@@ -11,6 +12,7 @@ export const App = () => {
       // }}
     >
     <Hero />
+    <Advantages />
     </div>
   );
 };

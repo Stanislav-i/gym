@@ -6,6 +6,8 @@ export const Container = styled.div`
     margin: 0 auto;
     /* padding: 0 2rem; */
 
+    /* border: 1px solid white; */
+
     @media (min-width: 393px) {
         width: 393px;
   }

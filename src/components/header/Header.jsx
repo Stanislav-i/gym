@@ -1,18 +1,21 @@
-import { Container } from 'components/Container';
 import React from 'react';
 import { HiMenu } from 'react-icons/hi';
-import { BurgerMenu, ColorSpan, Name, Wrapper } from './Header.styled';
+import { BurgerMenu, ColorSpan, HeaderNavList, HeaderNavlistItem, Name, Wrapper } from './Header.styled';
 
 const Header = () => {
   return (
-    <Container>
       <Wrapper>
-        <Name>FORM<ColorSpan>FACTOR</ColorSpan></Name>
+        <Name>Form<ColorSpan>Factor</ColorSpan></Name>
         <BurgerMenu>
           <HiMenu size="24px"/>
         </BurgerMenu>
+        <HeaderNavList>
+          <HeaderNavlistItem>Advantages</HeaderNavlistItem>
+          <HeaderNavlistItem>Membership</HeaderNavlistItem>
+          <HeaderNavlistItem>About</HeaderNavlistItem>
+          <HeaderNavlistItem>Trainers</HeaderNavlistItem>
+        </HeaderNavList>
       </Wrapper>
-    </Container>
   );
 };
 
