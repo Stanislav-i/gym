@@ -27,7 +27,7 @@ export const ColorSpan = styled.span`
     color: var(--color-accent);
 `
 
-export const HeaderNavList = styled.ul`
+export const HeaderNavList = styled.nav`
     display: none;
     gap: 75px;
 
@@ -35,8 +35,14 @@ export const HeaderNavList = styled.ul`
        display: flex;
   }
 `
-export const HeaderNavlistItem = styled.li`
+export const HeaderNavlistItem = styled.a`
+    color: var(--color-text);
     font-family: var(--text-family);
     font-size: var(--fs-sm);
+    text-decoration: none;
     cursor: pointer;
+
+    &:hover {
+        color: var(--color-accent);
+    }
 `

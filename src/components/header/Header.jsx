@@ -10,7 +10,7 @@ const Header = () => {
           <HiMenu size="24px"/>
         </BurgerMenu>
         <HeaderNavList>
-          <HeaderNavlistItem>Advantages</HeaderNavlistItem>
+          <HeaderNavlistItem href="#advantages">Advantages</HeaderNavlistItem>
           <HeaderNavlistItem>Membership</HeaderNavlistItem>
           <HeaderNavlistItem>About</HeaderNavlistItem>
           <HeaderNavlistItem>Trainers</HeaderNavlistItem>
