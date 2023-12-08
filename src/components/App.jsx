@@ -1,5 +1,6 @@
 import Advantages from "./advantages/Advantages";
 import Hero from "./hero/Hero";
+import Membership from "./membership/Membership";
 
 export const App = () => {
   return (
@@ -13,6 +14,7 @@ export const App = () => {
     >
     <Hero />
     <Advantages />
+    <Membership />
     </div>
   );
 };

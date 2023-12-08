@@ -11,7 +11,7 @@ const Header = () => {
         </BurgerMenu>
         <HeaderNavList>
           <HeaderNavlistItem href="#advantages">Advantages</HeaderNavlistItem>
-          <HeaderNavlistItem>Membership</HeaderNavlistItem>
+          <HeaderNavlistItem href="#membership">Membership</HeaderNavlistItem>
           <HeaderNavlistItem>About</HeaderNavlistItem>
           <HeaderNavlistItem>Trainers</HeaderNavlistItem>
         </HeaderNavList>
