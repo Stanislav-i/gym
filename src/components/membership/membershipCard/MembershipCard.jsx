@@ -14,13 +14,13 @@ import { YellowButton } from 'components/YellowButton/YellowButton.styled';
 const MembershipCard = ({ pass, cost, features }) => {
   return (
     <Wrapper>
-      <LitemTitle>Pass "{pass}"</LitemTitle>
+      <LitemTitle className="pass">Pass "{pass}"</LitemTitle>
       <LitemTitle className="cost">${cost}</LitemTitle>
       <LitemList>
         {features.map((text, index) => (
           <LitemText key={index}>
             <LitemImg>
-              <svg width="20" height="20">
+              <svg width="20" height="20" className='svg'>
                 <use href={sprite + '#icon-checkmark'} />
               </svg>
             </LitemImg>
