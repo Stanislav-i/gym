@@ -1,3 +1,4 @@
+import About from "./about/About";
 import Advantages from "./advantages/Advantages";
 import Hero from "./hero/Hero";
 import Membership from "./membership/Membership";
@@ -15,6 +16,7 @@ export const App = () => {
     <Hero />
     <Advantages />
     <Membership />
+    <About />
     </div>
   );
 };

@@ -19,7 +19,7 @@ const Advantages = () => {
         <SectionList>
           <SectionLitem>
             <span>
-            <svg width="50" height="50">
+            <svg width="50" height="50" stroke="var(--color-accent)">
               <use href={sprite + '#icon-icon_line'} />
             </svg>
             </span>
@@ -30,7 +30,7 @@ const Advantages = () => {
           </SectionLitem>
           <SectionLitem>
           <span>
-            <svg width="50" height="50">
+            <svg width="50" height="50" stroke="var(--color-accent)">
               <use href={sprite + '#icon-icon_eq'} />
             </svg>
           </span>
@@ -41,7 +41,7 @@ const Advantages = () => {
           </SectionLitem>
           <SectionLitem>
           <span>
-            <svg width="50" height="50">
+            <svg width="50" height="50" stroke="var(--color-accent)">
               <use href={sprite + '#icon-icon_zones'} />
             </svg>
           </span>
@@ -52,7 +52,7 @@ const Advantages = () => {
           </SectionLitem>
           <SectionLitem>
           <span>
-            <svg width="50" height="50">
+            <svg width="50" height="50" stroke="var(--color-accent)">
               <use href={sprite + '#icon-icon_clock'} />
             </svg>
             </span>

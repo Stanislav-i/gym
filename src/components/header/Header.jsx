@@ -12,7 +12,7 @@ const Header = () => {
         <HeaderNavList>
           <HeaderNavlistItem href="#advantages">Advantages</HeaderNavlistItem>
           <HeaderNavlistItem href="#membership">Membership</HeaderNavlistItem>
-          <HeaderNavlistItem>About</HeaderNavlistItem>
+          <HeaderNavlistItem href="#about">About</HeaderNavlistItem>
           <HeaderNavlistItem>Trainers</HeaderNavlistItem>
         </HeaderNavList>
       </Wrapper>

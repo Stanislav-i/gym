@@ -45,4 +45,8 @@ export const HeaderNavlistItem = styled.a`
     &:hover {
         color: var(--color-accent);
     }
+
+    @media (min-width: 1000px) {
+        font-size: var(--fs-md);
+  }
 `
