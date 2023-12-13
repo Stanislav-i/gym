@@ -13,7 +13,7 @@ const Header = () => {
           <HeaderNavlistItem href="#advantages">Advantages</HeaderNavlistItem>
           <HeaderNavlistItem href="#membership">Membership</HeaderNavlistItem>
           <HeaderNavlistItem href="#about">About</HeaderNavlistItem>
-          <HeaderNavlistItem>Trainers</HeaderNavlistItem>
+          <HeaderNavlistItem href="#trainers">Trainers</HeaderNavlistItem>
         </HeaderNavList>
       </Wrapper>
   );

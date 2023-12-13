@@ -10,7 +10,6 @@ import gymImg3 from '../../pictures/gym 3.jpg';
 import gymImg4 from '../../pictures/gym 4.jpg';
 
 const About = () => {
-    console.log(gymImg1);
     return (
         <Container>
             <Wrapper id="about">
