@@ -33,7 +33,25 @@ export const SectionTitle = styled.h2`
 `;
 
 export const SwiperDiv = styled.div`
-  /* @media (min-width: 744px) {
+  @media (min-width: 1000px) {
     display: none;
-  } */
+  }
 `;
+
+export const TrainersList = styled.ul`
+  display: none;
+  @media (min-width: 1000px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 58px;
+    padding: 0 30px
+  
+  }
+
+  @media (min-width: 1600px) {
+
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 0;
+  }
+`

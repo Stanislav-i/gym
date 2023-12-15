@@ -13,6 +13,7 @@ export const Wrapper = styled.div`
         padding: 200px 220px 0;
     }
 `;
+
 export const TextWrapper = styled.div`
   padding: 0 54px;
 

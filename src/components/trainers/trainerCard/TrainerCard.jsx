@@ -9,18 +9,18 @@ const TrainerCard = ({name}) => {
             <Name>{name}</Name>
             <IconsDiv>
                 <IconItem>
-            <svg width="40" height="40" className='svg'>
-                <use href={sprite + '#icon-inst'} />
+                <svg width="30" height="30" stroke='#ffffff'>
+                <use href={sprite + '#icon-instagram'} />
               </svg>
               </IconItem>
               <IconItem>
-              <svg width="40" height="40" className='svg'>
-                <use href={sprite + '#icon-twit'} />
+              <svg width="30" height="30" stroke='#ffffff'>
+                <use href={sprite + '#icon-twitter'} />
               </svg>
               </IconItem>
               <IconItem>
-              <svg width="40" height="40" className='svg'>
-                <use href={sprite + '#icon-yt'} />
+              <svg width="30" height="30" stroke='#ffffff'>
+                <use href={sprite + '#icon-youtube'} />
               </svg>
               </IconItem>
             </IconsDiv>

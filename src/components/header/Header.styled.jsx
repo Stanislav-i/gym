@@ -14,6 +14,11 @@ export const Wrapper = styled.div`
 export const Name = styled.div`
     font-family: var( --title-family);
     font-size: 24px;
+    color: red;
+
+    &.footerName{
+       padding-bottom: 25px; 
+    }
 `
 export const BurgerMenu = styled.div`
     cursor: pointer;

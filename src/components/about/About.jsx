@@ -22,16 +22,14 @@ const About = () => {
                 </TextWrapper>
                 <SwiperDiv>
                 <Swiper
-        //   spaceBetween={20}
+
           breakpoints={{
             390: { spaceBetween: 20, slidesPerView: 1.4, initialSlide: 1 },
             744: { spaceBetween: 27, slidesPerView: 1.3, initialSlide: 1 },
             1000: { spaceBetween: 0, slidesPerView: 1, initialSlide: 0 },
           }}
-        //   slidesPerView={1.4}
           centeredSlides={true}
-        //   initialSlide={1}
-          // loop={true}
+
         >
             <SwiperSlide><ImgThumb $bgi={gymImg1}></ImgThumb></SwiperSlide>
             <SwiperSlide><ImgThumb $bgi={gymImg2}></ImgThumb></SwiperSlide>

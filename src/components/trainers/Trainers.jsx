@@ -1,6 +1,6 @@
 import { Container } from 'components/Container';
 import React from 'react';
-import { SectionTitle, SwiperDiv, Wrapper } from './Trainers.styled';
+import { SectionTitle, SwiperDiv, TrainersList, Wrapper } from './Trainers.styled';
 import { trainers } from './trainersDB';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -13,11 +13,12 @@ const Trainers = () => {
         <SectionTitle>Trainers staff</SectionTitle>
         <SwiperDiv>
           <Swiper
-            spaceBetween={20}
-            slidesPerView={1.4}
+            breakpoints={{
+              390: { spaceBetween: 20, slidesPerView: 1.4, initialSlide: 1, loop: true },
+              744: { spaceBetween: 20, slidesPerView: 2.4, initialSlide: 1},
+              1000: { spaceBetween: 20, slidesPerView: 2.4, initialSlide: 1, loop: false},
+            }}
             centeredSlides={true}
-            initialSlide={1}
-            loop={true}
           >
             {trainers.map(({ name }, index) => (
               <SwiperSlide key={index}>
@@ -26,6 +27,13 @@ const Trainers = () => {
             ))}
           </Swiper>
         </SwiperDiv>
+        <TrainersList>
+        {trainers.map(({ name }, index) => (
+              <li key={index}>
+                <TrainerCard name={name} />
+              </li>
+            ))}
+        </TrainersList>
       </Wrapper>
     </Container>
   );
