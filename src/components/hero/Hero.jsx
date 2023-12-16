@@ -1,19 +1,40 @@
-import { Container } from 'components/Container';
-import React from 'react';
+import React, { useState } from 'react';
+import { createPortal } from 'react-dom';
 import { HeroText, Wrapper } from './Hero.styled';
 import Header from 'components/header/Header';
-import { YellowButton } from 'components/YellowButton/YellowButton.styled';
+import { ApplyButton } from 'components/buttons/ApplyButton.styled';
+import ModalConnect from 'components/modals/ModalConnect';
 
 const Hero = () => {
-    return (
-        <Container>
-            <Wrapper>
-                <Header />
-                <HeroText>Free trial session with a trainer</HeroText>
-                <YellowButton $wdth={'177px'} $hgth={'52px'}>Detailed</YellowButton>
-            </Wrapper>
-        </Container>
-    );
+  const [showModal, setShowModal] = useState(false);
+
+  const handleDetailedBtnClick = () => {
+    setShowModal(true);
+    document.body.style.overflow = 'hidden';
+  };
+
+  const handleCloseBtnClick = () => {
+    setShowModal(false);
+    document.body.style.overflow = 'unset';
+  };
+  return (
+    <Wrapper>
+      <Header />
+      <HeroText>Free trial session with a trainer</HeroText>
+      <ApplyButton
+        $wdth={'177px'}
+        $hgth={'52px'}
+        onClick={handleDetailedBtnClick}
+      >
+        Detailed
+      </ApplyButton>
+      {showModal &&
+        createPortal(
+          <ModalConnect onClose={handleCloseBtnClick} />,
+          document.body
+        )}
+    </Wrapper>
+  );
 };
 
 export default Hero;

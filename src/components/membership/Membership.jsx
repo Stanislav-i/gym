@@ -1,6 +1,10 @@
-import { Container } from 'components/Container';
 import React from 'react';
-import { MembershipList, SectionTitle, SwiperDiv, Wrapper } from './Membership.styled';
+import {
+  MembershipList,
+  SectionTitle,
+  SwiperDiv,
+  Wrapper,
+} from './Membership.styled';
 import MembershipCard from './membershipCard/MembershipCard';
 import { memberships } from './membershipDB';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -8,10 +12,9 @@ import 'swiper/css';
 
 const Membership = () => {
   return (
-    <Container>
-      <Wrapper id="membership">
-        <SectionTitle>Gym membership</SectionTitle>
-        <SwiperDiv>
+    <Wrapper id="membership">
+      <SectionTitle>Gym membership</SectionTitle>
+      <SwiperDiv>
         <Swiper
           spaceBetween={20}
           slidesPerView={1.4}
@@ -25,16 +28,15 @@ const Membership = () => {
             </SwiperSlide>
           ))}
         </Swiper>
-        </SwiperDiv>
-        <MembershipList>
+      </SwiperDiv>
+      <MembershipList>
         {memberships.map(({ pass, cost, features }, index) => (
-            <li key={index}>
-              <MembershipCard pass={pass} cost={cost} features={features} />
-            </li>
-          ))}
-        </MembershipList>
-      </Wrapper>
-    </Container>
+          <li key={index}>
+            <MembershipCard pass={pass} cost={cost} features={features} />
+          </li>
+        ))}
+      </MembershipList>
+    </Wrapper>
   );
 };
 

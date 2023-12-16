@@ -6,7 +6,7 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #222222;
+  background-color: var(--color-bg-cards);
   border-radius: 15px;
   width: 275px;
   height: 450px;

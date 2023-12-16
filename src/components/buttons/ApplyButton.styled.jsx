@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const YellowButton = styled.button`
+export const ApplyButton = styled.button`
   background-color: var(--color-accent);
   color: #000000;
   font-weight: var(--fw-semi-bold);

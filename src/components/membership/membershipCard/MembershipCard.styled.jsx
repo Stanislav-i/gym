@@ -5,7 +5,7 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #222222;
+  background-color: var(--color-bg-cards);
   border-radius: 15px;
   width: 275px;
   height: 400px;
@@ -62,7 +62,7 @@ export const LitemImg = styled.span`
 `;
 export const LitemP = styled.p``;
 
-export const YellowBtnCont = styled.div`
+export const ApplyBtnCont = styled.div`
   position: absolute;
   bottom: 38px;
 `;

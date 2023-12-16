@@ -1,57 +1,62 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 37px;
-    width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 37px;
+  width: 100%;
 
-    @media (min-width: 744px) {
-        padding: 0;
+  @media (min-width: 744px) {
+    padding: 0;
   }
-`
+`;
 export const Name = styled.div`
-    font-family: var( --title-family);
-    font-size: 24px;
-    color: red;
+  font-family: var(--title-family);
+  font-size: 24px;
+  color: red;
 
-    &.footerName{
-       padding-bottom: 25px; 
-    }
-`
-export const BurgerMenu = styled.div`
-    cursor: pointer;
-
-    @media (min-width: 744px) {
-       display: none;
+  &.footerName {
+    padding-bottom: 25px;
   }
-`
+`;
+export const BurgerMenu = styled.div`
+  cursor: pointer;
+
+  @media (min-width: 744px) {
+    display: none;
+  }
+`;
 
 export const ColorSpan = styled.span`
-    color: var(--color-accent);
-`
+  color: var(--color-accent);
+`;
 
 export const HeaderNavList = styled.nav`
-    display: none;
-    gap: 75px;
+  display: none;
+  gap: 75px;
 
-    @media (min-width: 744px) {
-       display: flex;
+  @media (min-width: 744px) {
+    display: flex;
   }
-`
+`;
 export const HeaderNavlistItem = styled.a`
-    color: var(--color-text);
-    font-family: var(--text-family);
-    font-size: var(--fs-sm);
-    text-decoration: none;
-    cursor: pointer;
+  color: var(--color-text);
+  font-family: var(--text-family);
+  font-size: var(--fs-sm);
+  text-decoration: none;
+  cursor: pointer;
 
-    &:hover {
-        color: var(--color-accent);
-    }
-
-    @media (min-width: 1000px) {
-        font-size: var(--fs-md);
+  &:hover {
+    color: var(--color-accent);
   }
-`
+
+  @media (min-width: 1000px) {
+    font-size: var(--fs-md);
+  }
+
+  &.burger {
+    font-size: var(--fs-md);
+  }
+`;

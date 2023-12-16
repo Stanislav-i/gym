@@ -97,3 +97,25 @@ export const ImgThumb = styled.div`
     height: 430px;
   }
 `;
+
+export const SwiperControlsDiv = styled.div`
+  display: none;
+
+  @media (min-width: 1000px) {
+    display: flex;
+    padding-top: 10px;
+    justify-content: space-between;
+    align-items: center;
+  }
+`
+
+export const SwiperControlItemDiv = styled.div`
+  display: flex;
+  gap: 10px;
+`
+
+export const SwiperControlItem = styled.div`
+  cursor: pointer;
+  background-color: var( --color-bg);
+  color: var(--color-text);
+`

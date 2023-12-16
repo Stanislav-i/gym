@@ -34,11 +34,7 @@ export const Wrapper = styled.div`
         #000000 10%,
         rgba(15, 15, 15, 0) 50%
       ),
-      linear-gradient(
-        to top,
-        #000000 2%,
-        rgba(15, 15, 15, 0) 30%
-      ),
+      linear-gradient(to top, #000000 2%, rgba(15, 15, 15, 0) 30%),
       url('${heroBgImgTablet}');
     background-position: 290px 0;
   }
@@ -52,38 +48,27 @@ export const Wrapper = styled.div`
         #000000 10%,
         rgba(15, 15, 15, 0) 50%
       ),
-      linear-gradient(
-        to top,
-        #000000 2%,
-        rgba(15, 15, 15, 0) 30%
-      ),
+      linear-gradient(to top, #000000 2%, rgba(15, 15, 15, 0) 30%),
       url('${heroBgImgDesktop}');
     background-position: 300px 0;
   }
 
   @media (min-width: 1600px) {
-    padding-left:220px;
-    padding-right:220px;
+    padding-left: 220px;
+    padding-right: 220px;
 
     background-image: linear-gradient(
         to right,
         #000000 10%,
         rgba(15, 15, 15, 0) 50%
       ),
-      linear-gradient(
-        to top,
-        #000000 2%,
-        rgba(15, 15, 15, 0) 30%
-      ),
-      linear-gradient(
-        to left,
-        #000000 50%,
-        rgba(15, 15, 15, 0) 70%
-      ),
+      linear-gradient(to top, #000000 2%, rgba(15, 15, 15, 0) 30%),
+      linear-gradient(to left, #000000 50%, rgba(15, 15, 15, 0) 70%),
       url('${heroBgImgDesktopLarge}');
     background-position: 650px 0;
   }
 `;
+
 export const HeroText = styled.h1`
   font-family: var(--h-family);
   padding: 90px 37px 75px;

@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { createPortal } from 'react-dom';
 import {
   LitemImg,
   LitemList,
@@ -6,12 +7,24 @@ import {
   LitemText,
   LitemTitle,
   Wrapper,
-  YellowBtnCont,
+  ApplyBtnCont,
 } from './MembershipCard.styled';
 import sprite from '../../../pictures/sprite.svg';
-import { YellowButton } from 'components/YellowButton/YellowButton.styled';
+import { ApplyButton } from 'components/buttons/ApplyButton.styled';
+import ModalConnect from 'components/modals/ModalConnect';
 
 const MembershipCard = ({ pass, cost, features }) => {
+  const [showModal, setShowModal] = useState(false);
+
+  const handleBuyBtnClick = () => {
+    setShowModal(true);
+    document.body.style.overflow = 'hidden';
+  };
+
+  const handleCloseBtnClick = () => {
+    setShowModal(false);
+    document.body.style.overflow = 'unset';
+  };
   return (
     <Wrapper>
       <LitemTitle className="pass">Pass "{pass}"</LitemTitle>
@@ -20,7 +33,7 @@ const MembershipCard = ({ pass, cost, features }) => {
         {features.map((text, index) => (
           <LitemText key={index}>
             <LitemImg>
-              <svg width="20" height="20" className='svg'>
+              <svg width="20" height="20" className="svg">
                 <use href={sprite + '#icon-checkmark'} />
               </svg>
             </LitemImg>
@@ -28,16 +41,22 @@ const MembershipCard = ({ pass, cost, features }) => {
           </LitemText>
         ))}
       </LitemList>
-      <YellowBtnCont>
-        <YellowButton
+      <ApplyBtnCont>
+        <ApplyButton
+          onClick={handleBuyBtnClick}
           $wdth={'107px'}
           $hgth={'30px'}
           $pd={'6px 38px'}
           $fs={'var(--fs-sm)'}
         >
           Buy
-        </YellowButton>
-      </YellowBtnCont>
+        </ApplyButton>
+      </ApplyBtnCont>
+      {showModal &&
+        createPortal(
+          <ModalConnect onClose={handleCloseBtnClick} />,
+          document.body
+        )}
     </Wrapper>
   );
 };

@@ -13,7 +13,7 @@ export const Wrapper = styled.div`
   }
 
   @media (min-width: 1000px) {
-        padding: 250px 30px 83px;
+    padding: 250px 30px 83px;
   }
 
   @media (min-width: 1600px) {
@@ -35,18 +35,17 @@ export const VisuallyHidden = styled.h2`
 `;
 
 export const AboutText = styled.div`
-    display: none;
-    @media (min-width: 1000px) {
+  display: none;
+  @media (min-width: 1000px) {
     width: 275px;
-     display: flex;
-     flex-direction: column;
-     align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
-
-`
+`;
 
 export const TextBlock = styled.div`
-  &:not(:last-child){
+  &:not(:last-child) {
     padding-bottom: 30px;
   }
 
@@ -56,7 +55,7 @@ export const TextBlock = styled.div`
     align-items: flex-start;
   }
 
-  &.hidden{
+  &.hidden {
     display: none;
   }
 `;
@@ -86,7 +85,7 @@ export const ContactsItemWrapper = styled.div`
   }
 `;
 export const IconsDiv = styled.div`
-padding-top: 30px;
+  padding-top: 30px;
   display: flex;
   justify-content: center;
   gap: 24px;
@@ -95,7 +94,7 @@ export const IconItem = styled.li`
   cursor: pointer;
 
   transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
-       fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 
   &:hover {
     stroke: var(--color-accent);
