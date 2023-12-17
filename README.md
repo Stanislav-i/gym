@@ -2,9 +2,8 @@
 Commercial gym landing page
 
 ## Features
-Modal windows
-Page navigation
-Swipe images
+1. Swipe images
+2. Adaptive/responsive layout
 
 ### Stack's used:
 
